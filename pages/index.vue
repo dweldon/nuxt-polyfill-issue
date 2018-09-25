@@ -1,15 +1,23 @@
 <template>
-  <h1>Hello {{ message }}!</h1>
+  <h1>Hello World</h1>
 </template>
 
 <script>
-const obj = { 0: 'Nuxt' };
+import gql from 'graphql-tag';
 
 export default {
-  computed: {
-    message() {
-      return Object.entries(obj)[0][1];
-    }
-  }
+  data() {
+    return {
+      viewer: {},
+    };
+  },
+  apollo: {
+    viewer: gql`{
+      viewer {
+        id
+        lastName
+      }
+    }`,
+  },
 };
 </script>

@@ -1,9 +1,14 @@
 module.exports = {
-  head: {
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    ],
-  },
   mode: 'spa',
+  modules: [
+    '@nuxtjs/apollo',
+  ],
+  apollo: {
+    clientConfigs: {
+      default: {
+        getAuth: () => 'abc123',
+        httpEndpoint: 'http://localhost:4000',
+      },
+    },
+  },
 };
