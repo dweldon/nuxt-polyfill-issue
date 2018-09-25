@@ -1,0 +1,14 @@
+{
+  "name": "nuxt-polyfill-issue",
+  "version": "1.0.0",
+  "private": true,
+  "description": "demo of polyfill issue",
+  "scripts": {
+    "build": "nuxt build",
+    "build:analyze": "nuxt build -a",
+    "start": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  }
+}
