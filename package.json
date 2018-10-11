@@ -9,7 +9,7 @@
     "start": "nuxt"
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^4.0.0-rc2.2",
+    "@nuxtjs/apollo": "^4.0.0-rc2.3",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.10.0",
     "nuxt": "^2.1.0"
