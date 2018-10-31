@@ -1,4 +1,9 @@
 module.exports = {
+  head: {
+    script: [
+      { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Object.entries' },
+    ],
+  },
   mode: 'spa',
   modules: [
     '@nuxtjs/apollo',
